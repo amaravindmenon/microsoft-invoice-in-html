@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Microsoft</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            height: 110vh;
+            padding: 30px;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            color: #556;
+        }
+        
+        .zero {
+            text-align: right;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .first {
+            display: flex;
+        }
+        
+        .image {
+            width: 50%;
+        }
+        
+        .image>img {
+            height: 2em;
+            width: 10em;
+            padding-top: 1em;
+        }
+        
+        .invoice {
+            width: 50%;
+            text-align: right;
+            padding-top: 0.5em;
+        }
+        
+        .value {
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .second {
+            display: flex;
+        }
+        
+        .sold {
+            width: 30%;
+        }
+        
+        .sold>span,
+        .bill>span,
+        .service>span {
+            font-weight: bold;
+        }
+        
+        .bill {
+            width: 30%;
+        }
+        
+        .service {
+            width: 30%;
+        }
+        
+        .third {
+            display: flex;
+        }
+        
+        .table1 {
+            font-size: 0.65em;
+            width: 60%;
+            margin-right: 2px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table2 {
+            font-size: 0.65em;
+            width: 40%;
+        }
+        
+        th {
+            text-align: left;
+            background: #a4a6a8;
+            color: white;
+        }
+        
+        td {
+            padding-right: 2.5em;
+            background: #f8f8f8;
+        }
+        
+        .fourth {
+            font-size: 0.75em;
+        }
+        
+        .fourth>span {
+            font-weight: bold;
+            padding-right: 50px;
+        }
+        
+        .five {
+            display: flex;
+        }
+        
+        .table2>table>tr>td>span {
+            font-weight: bold;
+        }
+        
+        .end {
+            text-align: center;
+        }
+        
+        .end>span {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <div class="zero">Invoice</div>
+        <div class="first">
+            <div class="image">
+                <img src="microsoft.png" alt="" />
+            </div>
+            <div class="invoice">
+                February 2019<br />Invoice Date: 02/25/2019<br />Invoice Number: E04001V5VN <br />Due Date: 03/26/2019
+            </div>
+        </div>
+        <div class="value">2,175.00 USD</div>
+        <div class="second">
+            <div class="sold">
+                <span>Sold-To</span><br /> Nod Publishers<br /> 4567 Main Rd.<br /> Buffalo NY 14260<br /> United States
+            </div>
+            <div class="bill">
+                <span>Bill-To</span><br /> Nod Publishers<br /> 4567 Main Rd.<br /> Buffalo NY 14260<br /> United States
+            </div>
+            <div class="service">
+                <span>Service Usage Address</span><br /> Nod Publishers<br /> 4567 Main Rd.<br /> Buffalo NY 14260<br /> United States
+            </div>
+        </div>
+        <br /><br />
+        <div class="third">
+            <div class="table1">
+                <table>
+                    <tr>
+                        <th colspan="2">Order Details</th>
+                    </tr>
+                    <tr>
+                        <td>Product:</td>
+                        <td>Online Services</td>
+                    </tr>
+                    <tr>
+                        <td>Customer PO Number:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Order Number</td>
+                        <td>9089231b9s3-6750-34bf-03ew-dgshja453h43</td>
+                    </tr>
+                    <tr>
+                        <td>Billing Period:</td>
+                        <td>02/24/2019-02/24/2019</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Terms:</td>
+                        <td>Net 30</td>
+                    </tr>
+                    <tr>
+                        <td>Due Date:</td>
+                        <td>03/23/2019</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table2">
+                <table>
+                    <tr>
+                        <th colspan="2">Billing Summary</th>
+                    </tr>
+                    <tr>
+                        <td>Charges:</td>
+                        <td style="text-align: right">2,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Discounts:</td>
+                        <td style="text-align: right">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Credits:</td>
+                        <td style="text-align: right">0.0</td>
+                    </tr>
+                    <tr>
+                        <td>Taxes:</td>
+                        <td style="text-align: right">175.00</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; padding-bottom: 2em">Total:</td>
+                        <td style="
+                  font-weight: bold;
+                  text-align: right;
+                  padding-bottom: 2em;
+                ">
+                            2,175.00
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="fourth">
+            <span>Payment Instruction</span> Please pay 2,175.00 USD by 03/26/2019 and reference Invoice Number E04001V5VN on the payment remittance.
+        </div>
+        <div class="five">
+            <div class="table1">
+                <table>
+                    <tr>
+                        <th colspan="2">Electronic Funds Transfer</th>
+                    </tr>
+                    <tr>
+                        <td>Bank:</td>
+                        <td>Bank of America</td>
+                    </tr>
+                    <tr>
+                        <td>SWIFT CODE:</td>
+                        <td>B0FAUS3N</td>
+                    </tr>
+                    <tr>
+                        <td>ABA/Routing Number:</td>
+                        <td>111 000 012</td>
+                    </tr>
+                    <tr>
+                        <td>Account Number:</td>
+                        <td>4426587954</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 20px">Account Name:</td>
+                        <td>Microsoft</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table2">
+                <table>
+                    <tr>
+                        <th colspan="2">Check</th>
+                    </tr>
+                    <tr>
+                        <td>Payee:</td>
+                        <td>Microsoft</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: top">Mailing Address:</td>
+                        <td><span>Standard Mall:</span> PO Box 842103</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Dallas, TX 75284-2303<br />
+                            <span>Express Mall:</span> Lockbox 842103, 1950 N.<br /> stemmons Frey Ste. 5010 <br /> Dallas, TX 7527-2303
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br /><br />
+        <div class="end">
+            Billing or service question? Call 1-800-865-9408 or visit
+            <a href>https://aka.ms/office365Billing</a> <br /><span>Microsoft Corporation - One Microsoft Way - Redmond, WA 90052 -
+          UNited States<br />
+          US FEN +91-1146662</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
